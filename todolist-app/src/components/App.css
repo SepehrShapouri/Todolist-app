@@ -12,10 +12,11 @@
 
 .container{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 40rem;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 4px;
+    padding: 20px;
 }
