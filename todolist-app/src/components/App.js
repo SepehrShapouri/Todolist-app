@@ -2,7 +2,9 @@ import "./App.css"
 
 const App = () => {
   return ( 
-    <h2>hello this is my react app</h2>
+    <div className="App">
+      <h1>todolist-react</h1>
+    </div>
    );
 }
  
