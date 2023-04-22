@@ -1,13 +1,16 @@
-const Todo = ({ todos }) => {
+import { BsTrash } from "react-icons/bs"
+const Todo = ({ todos , onComplete,onDelete}) => {
   return (
-    <div key={todos.id}>
+    <div className={todos.isCompleted ? "completedTodo" : "todo"}>
       <div>{todos.text}</div>
       <div>
         <button>Edit</button>
-        <button>Complete</button>
+        <button onClick={onComplete}>{todos.isCompleted ? "completed" : "complete"}</button>
+        <button onClick={onDelete}><BsTrash/></button>
       </div>
     </div>
   );
+
 };
 
 export default Todo;

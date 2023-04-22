@@ -15,6 +15,7 @@ const TodoForm = ({addTodoHandler}) => {
     addTodoHandler(input)
     setInput("")
   };
+
   return (
     <form onSubmit={submitHandler}>
       <input type="text" onChange={changeHandler} value={input} />

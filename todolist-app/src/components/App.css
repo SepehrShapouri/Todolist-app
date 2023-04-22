@@ -20,3 +20,13 @@
     border-radius: 5px;
     padding: 20px;
 }
+.todo,.completedTodo{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 1rem;
+}
+.completedTodo{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
