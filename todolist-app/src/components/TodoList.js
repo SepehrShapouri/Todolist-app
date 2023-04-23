@@ -4,10 +4,10 @@ import React, { useState } from "react";
 
 const TodoList = ({ todos, onComplete, onDelete, onEdit }) => {
   const [edit, setEdit] = useState({ id: null, text: "", isCompleted: false });
-  const updateTodo = (newValue)=>{
-    onEdit(edit.id,newValue)
-    setEdit({id:null,text:"",isCompleted:false})
-  }
+  const updateTodo = (newValue) => {
+    onEdit(edit.id, newValue);
+    setEdit({ id: null, text: "", isCompleted: false });
+  };
   const renderTodos = () => {
     if (todos.length === 0) return <div>add some todos</div>;
     return todos.map((todo) => {
@@ -22,6 +22,14 @@ const TodoList = ({ todos, onComplete, onDelete, onEdit }) => {
       );
     });
   };
-  return <div>{edit.id ? <TodoForm submitTodo={updateTodo} edit={edit}/> : renderTodos()}</div>;
+  return (
+    <div>
+      {edit.id ? (
+        <TodoForm submitTodo={updateTodo} edit={edit} />
+      ) : (
+        renderTodos()
+      )}
+    </div>
+  );
 };
 export default TodoList;
