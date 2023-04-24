@@ -88,3 +88,9 @@ input:focus{
     align-items: center;
     border-radius: 50%;
 }
+.emptyBadge{
+    color: white;
+}
+.addTodos,.listedTodos{
+    border-bottom: 1px solid #6d28d9;
+}
