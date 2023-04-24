@@ -4,7 +4,7 @@ import TodoApp from "./TodoApp";
 const App = () => {
   return ( 
     <div className="App">
-      <h1>todolist-react</h1>
+      <h1 className="appTitle">todolist-react</h1>
       <TodoApp/>
     </div>
    );
