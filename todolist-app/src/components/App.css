@@ -70,7 +70,6 @@ input:focus{
 }
 .uncompletedCount{
     display: flex;
-    margin-bottom: 1.5rem;
     width: 300px;
     justify-content: space-evenly;
     align-items: center;
@@ -97,4 +96,10 @@ input:focus{
 .appTitle{
     text-transform: capitalize;
     opacity: 0.7;
+}
+.contentHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
 }

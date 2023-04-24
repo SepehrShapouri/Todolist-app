@@ -40,8 +40,10 @@ const TodoApp = () => {
   };
   return (
     <div className="container">
+      <div className="contentHolder">
       <Navbar value={todos} />
-      <Filter/>
+      <Filter todos={todos} />
+      </div>
       <TodoForm submitTodo={addTodo} />
       <TodoList
         todos={todos}
