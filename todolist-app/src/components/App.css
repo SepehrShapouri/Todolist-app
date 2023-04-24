@@ -68,3 +68,23 @@ input:focus{
     color: #6d28d9;
     background-color: #fff;
 }
+.uncompletedCount{
+    display: flex;
+    margin-bottom: 1.5rem;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.uncompletedCount p{
+    font-size: 1.1rem;
+}
+.uncompletedBadge{
+    background-color: #6d28d9;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
