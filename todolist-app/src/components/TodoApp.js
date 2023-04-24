@@ -2,7 +2,7 @@ import { useState } from "react";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 import Navbar from "./Navbar";
-
+import Filter from "./Filter";
 const TodoApp = () => {
   const [todos, setTodos] = useState([]);
 
@@ -41,6 +41,7 @@ const TodoApp = () => {
   return (
     <div className="container">
       <Navbar value={todos} />
+      <Filter/>
       <TodoForm submitTodo={addTodo} />
       <TodoList
         todos={todos}

@@ -79,8 +79,8 @@ input:focus{
     font-size: 1.1rem;
 }
 .uncompletedBadge{
-    background-color: #6d28d9;
-    color: white;
+    background-color: #d0c7f7;
+    color: #6d28d9;
     width: 20px;
     height: 20px;
     display: flex;
