@@ -6,9 +6,9 @@ const options = [
     {value:"Completed" ,label:"Completed" },
     {value:"unCompleted" ,label:"Uncompleted" }
 ]
-const Filter = () => {
+const Filter = ({status,changeHandler}) => {
     return ( 
-        <Select options={options}/>
+        <Select options={options} onChange={(e)=>changeHandler(e)} defaultValue={status}/>
      );
 }
  
